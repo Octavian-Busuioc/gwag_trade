@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Gwag Trade</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png+xml" href="/images/favicon.png" />
+
+    <!-- Plugin-CSS -->
+    <!-- Bootstrap v3.3.7 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/space.css" />
+    <link rel="stylesheet" href="css/overright.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <div class="section-bg black">
+      <div class="section-bg header-bg"></div>
+    </div>
+
+    <nav class="navbar mainmenu-area">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand"><img src="images/logo.png" alt="" /></div>
+        </div>
+        <ul class="nav navbar-right">
+          <li class="active"><a href="#home" data-toggle="tab">Acasa</a></li>
+          <li><a href="#products" data-toggle="tab">Produse</a></li>
+          <li><a href="#about" data-toggle="tab">Despre</a></li>
+          <li><a href="#contact" data-toggle="tab">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+    <header class="tab-content">
+      <div class="vcenter tab-pane fade in active" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-7 col-lg-8">
+              <h1 class="headline">Gwag <span>Trade</span></h1>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+              <h2>Tel: <a href="tel:+40721855551">+40 721 855 551</a></h2>
+              <h2>mail: contact@gwagtrade.ro</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vcenter tab-pane fade in" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="page-title">About Us</h2>
+              GwagTrade it's a company specialized in fertilizers import and
+              distribution and grains export.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vcenter tab-pane fade in" id="products">
+        <div class="products">
+
+          
+          <div class="product">
+            <img src="products/01.jpg" alt="" />
+            <p class="title">Product title</p>
+            <p class="description">
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipisicing elit. Minima, quo.
+            </p>
+            <a
+              class="info"
+              id="modalBtn"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Click for more info"
+              >Info</a
+            >
+
+            <div id="simpleModal" class="info-btn-modal">
+              <span class="closeBtn">&times;</span>
+              <div class="content-modal"></div>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+
+      <div class="vcenter tab-pane fade in" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <form name="contact" id="contact-form">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                      <label for="form-name">Numele tau</label>
+                      <input
+                        required
+                        type="text"
+                        id="form-name"
+                        name="name"
+                        class="form-control"
+                        placeholder="Numele tau"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                      <label for="form-email">Email</label>
+                      <input
+                        required
+                        type="email"
+                        class="form-control"
+                        placeholder="Adresa de email"
+                        id="form-email"
+                        name="email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form-group">
+                      <label for="form-subject">Subiect</label>
+                      <input
+                        required
+                        type="text"
+                        class="form-control"
+                        id="form-subject"
+                        name="subject"
+                        placeholder="Subiect"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form-group">
+                      <label for="form-message">Mesaj</label>
+                      <textarea
+                        required
+                        class="form-control"
+                        id="form-message"
+                        name="message"
+                        rows="6"
+                        placeholder="Scrie un mesaj"
+                      ></textarea>
+                    </div>
+                    <div class="space-30"></div>
+                    <div class="text-center">
+                      <button class="btn btn-default" type="submit">
+                        Trimite <i class="fa-solid fa-paper-plane"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 xs-center">fsdfds</div>
+
+          <div class="col-xs-12 col-sm-6 text-right xs-center">
+            <ul class="list-unstyled list-inline social-list">
+              <li>ne poti urmari si aici:</li>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        &copy;&nbsp; <span id="current-year">2022</span>&nbsp;toate drepturile
+        rezervate de catre&nbsp;
+        <span>Gwag Trade</span>
+      </div>
+    </footer>
+
+    <!--Vendor-JS-->
+
+    <script src="/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+    <!--Plugin-JS-->
+    <script src="/js/canvas.js"></script>
+    <!-- Copyright-JS -->
+    <script src="/js/copyright.js"></script>
+    <!-- CDN supabase install -->
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]');
+        $("a").tooltip();
+      });
+    </script>
+    <script src="/js/script.js"></script>
+    <script>
+      const { createClient } = supabase;
+
+      supabase = createClient(
+        "https://rzjwnkslufdbzsbpikml.supabase.co",
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ6andua3NsdWZkYnpzYnBpa21sIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzkzMjQ4NjUsImV4cCI6MTk5NDkwMDg2NX0.tdtezU9QhqWlZHe60xheB9_8qx42T1r5V7L2A9eM8fA"
+      );
+
+      const form = document.querySelector("#contact-form");
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const formInputs = form.querySelectorAll(
+          "input, input, input, textarea"
+        );
+
+        let submision = {};
+
+        formInputs.forEach((element) => {
+          const { value, name } = element;
+          if (value) {
+            submision[name] = value;
+          }
+        });
+
+        // console.log(submision);
+
+        const { error, data } = await supabase
+          .from("clients")
+          .insert([submision]);
+
+        if (error) {
+          alert(`There was an error, please try again`);
+        } else {
+          alert(`Thanks for contacting us`);
+        }
+
+        //this will reset everty input
+        formInputs.forEach((element) => (element.value = ""));
+
+        // console.log({error, data});
+      });
+    </script>
+  </body>
+</html>
