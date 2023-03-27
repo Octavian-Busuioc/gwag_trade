@@ -83,9 +83,8 @@
       <div class="vcenter tab-pane fade in" id="products">
         <div class="products">
 
-          
-          <div class="product">
-            <img src="products/01.jpg" alt="" />
+          <div class="product" id="table_body">
+            <!-- <img src="products/01.jpg" alt="" /> -->
             <p class="title">Product title</p>
             <p class="description">
               Lorem ipsum dolor sit amet, <br />
@@ -100,15 +99,24 @@
               >Info</a
             >
 
-            <div id="simpleModal" class="info-btn-modal">
-              <span class="closeBtn">&times;</span>
-              <div class="content-modal"></div>
-            </div>
+           
+
+
           </div>
 
+
+          <!-- <a class="info" id="modalBtn" data-toggle="tooltip" data-placement="top" title="Click for more info">Info</a> -->
+          <!-- <div id="simpleModal" class="info-btn-modal">
+            <span class="closeBtn">&times;</span>
+            <div class="content-modal"></div>
+          </div> -->
+
          
+
+
         </div>
       </div>
+
 
       <div class="vcenter tab-pane fade in" id="contact">
         <div class="container">
@@ -211,6 +219,7 @@
       </div>
     </footer>
 
+
     <!--Vendor-JS-->
 
     <script src="/js/vendor/jquery-1.12.4.min.js"></script>
@@ -229,6 +238,39 @@
       });
     </script>
     <script src="/js/script.js"></script>
+    
+    <script>
+      //fetch data
+
+      fetch("./product.json").then((data) => {
+        // console.log(data); json format
+        return data.json(); //converted to object
+      }).then((objectData)=> {
+        // console.log(objectData[0].title);
+        let tableData = "";
+        objectData.map((values) => {
+          tableData= ` <p class="title">${values.title}</p>
+                       <p class="description">${values.description}</p>
+
+
+                            <h1><a href="#modal">Open Modal</a></h1>
+                <div id="modal">
+                  <a href="#" class="close"></a>
+                  <div class="modal-content">  
+                    <a href="# ">x</a>
+                      <h1>${values.info}</h1>
+                      <p>Text Content here</p>
+                      <div style = "display:flex;gap:10px;">
+                          <button>Cancel</button>
+                          <button>Ok</button>
+                      </div>
+                  </div>
+                </div>
+                     `
+        });
+        document.getElementById("table_body").innerHTML=tableData;
+      })
+    </script>
     <script>
       const { createClient } = supabase;
 

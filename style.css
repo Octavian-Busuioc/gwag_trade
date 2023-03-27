@@ -386,7 +386,7 @@ input:-webkit-autofill:focus {
   text-transform: uppercase;
 }
 
-.product .info {
+/* #products .info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -398,7 +398,7 @@ input:-webkit-autofill:focus {
   cursor: pointer;
 }
 
-.product .info-btn-modal {
+#products .info-btn-modal {
  display: none;
  position: fixed;
  top: 50%;
@@ -411,18 +411,72 @@ input:-webkit-autofill:focus {
  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
 
-.product .content-modal {
+#products .content-modal {
   padding: 5em;
 }
 
-.product .closeBtn {
+#products .closeBtn {
   color: #b3afaf;
   float: right;
   margin-right: 15px;
   font-size: 40px;
   cursor: pointer;
+} */
+
+
+#products #modal{
+  visibility:hidden;
+  opacity:0;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition: .3s opacity ease-in-out;
 }
 
+#products #modal:target{
+  visibility:visible;
+  opacity:1;
+  z-index:11;
+}
+
+#products #modal .close{
+  position:absolute;
+  width:100%;
+  height:100%;
+  cursor:default;
+  
+}
+
+#products #modal .modal-content{
+  padding:10px;
+  display:flex;
+  position:relative;
+  justify-content:center;
+  align-items:center;
+  width:40%;
+  height: 200px;
+  background-color:rgba(0,0,0,.8);
+}
+
+#products #modal .modal-content p{
+  text-align:center;
+  color:white;
+  font-size:1.5rem;
+}
+
+#products #modal .modal-content a{
+  position: absolute;
+  color:white;
+  font-size:1.5rem;
+  top:0;
+  right:10px;
+}
 
 /* end products */
 
