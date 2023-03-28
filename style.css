@@ -51,7 +51,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 10px;
-  font-weight: 600;
+  font-weight: 200;
   font-family: "norwesterregular";
 }
 
@@ -460,7 +460,7 @@ input:-webkit-autofill:focus {
   justify-content:center;
   align-items:center;
   width:40%;
-  height: 200px;
+  height: 600px;
   background-color:rgba(0,0,0,.8);
 }
 
@@ -478,6 +478,81 @@ input:-webkit-autofill:focus {
   right:10px;
 }
 
+#products #modal .modal-content .specs ul li::before {
+  content: "\2022";
+  color: #6cb366;
+  font-weight: bold;
+  font-size: 3rem;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+#products #modal-two{
+  visibility:hidden;
+  opacity:0;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition: .3s opacity ease-in-out;
+}
+
+#products #modal-two:target{
+  visibility:visible;
+  opacity:1;
+  z-index:11;
+}
+
+#products #modal-two .close-two
+{
+  position:absolute;
+  width:100%;
+  height:100%;
+  cursor:default;
+  
+}
+
+#products #modal-two .modal-content-two{
+  padding:10px;
+  display:flex;
+  position:relative;
+  justify-content:center;
+  align-items:center;
+  width:40%;
+  height: 600px;
+  background-color:rgba(0,0,0,.8);
+}
+
+#products #modal-two .modal-content-two p{
+  text-align:center;
+  color:white;
+  font-size:1.5rem;
+}
+
+#products #modal-two .modal-content-two a{
+  position: absolute;
+  color:white;
+  font-size:1.5rem;
+  top:0;
+  right:10px;
+}
+
+#products #modal-two .modal-content-two .specs-two ul li::before {
+  content: "\2022";
+  color: #6cb366;
+  font-weight: bold;
+  font-size: 3rem;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
 /* end products */
 
 /* navigation */
@@ -489,7 +564,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #3a3a3a;
+  color: #fbfbfb;
 }
 
 .header {

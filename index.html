@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Place favicon.ico in the root directory -->
-    <link rel="icon" type="image/png+xml" href="/images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
 
     <!-- Plugin-CSS -->
     <!-- Bootstrap v3.3.7 CSS -->
@@ -64,6 +64,9 @@
             <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
               <h2>Tel: <a href="tel:+40721855551">+40 721 855 551</a></h2>
               <h2>mail: contact@gwagtrade.ro</h2>
+              <h2>adresa: Bucuresti, B-dul Iuliu Maniu nr. 7,  Sector 6, corp A, sc 1, Et. 1, Birou Z6 - Z10</h2>
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2848.9973377810793!2d26.05171786591866!3d44.433216828976036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBucuresti%2C%20B-dul%20Iuliu%20Maniu%20nr.%207%2C%20Sector%206%2C%20corp%20A%2C%20sc%201%2C%20Et.%201!5e0!3m2!1sro!2sro!4v1679987886068!5m2!1sro!2sro" 
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
             </div>
           </div>
         </div>
@@ -73,8 +76,8 @@
           <div class="row">
             <div class="col-xs-12">
               <h2 class="page-title">About Us</h2>
-              GwagTrade it's a company specialized in fertilizers import and
-              distribution and grains export.
+            <b>GwagTrade</b> este o companie specializata in importul si distributia de <br><i>fertilizanti</i> si exportul de <i>samanta certificata</i>.
+              <b>atat pentru agricultura conventionala, cat si pentru cea ecologica.</b>
             </div>
           </div>
         </div>
@@ -253,17 +256,44 @@
                        <p class="description">${values.description}</p>
 
 
-                            <h1><a href="#modal">Open Modal</a></h1>
+                            <h1><a href="#modal">Specificatii</a></h1>
+                            <h1><a href="#modal-two">Importanta fosforului</a></h1>
                 <div id="modal">
                   <a href="#" class="close"></a>
                   <div class="modal-content">  
                     <a href="# ">x</a>
-                      <h1>${values.info}</h1>
-                      <p>Text Content here</p>
-                      <div style = "display:flex;gap:10px;">
-                          <button>Cancel</button>
-                          <button>Ok</button>
-                      </div>
+                      <div class="specs">
+                        <h2>${values.headingtwo}</h2>
+                          <ul>
+                            <li>${values.firstp}</li>
+                            <li>${values.secondp}</li>
+                            <li>${values.thirdp}</li>
+                            <li>${values.forthp}</li>
+                          </ul>
+                          <div>
+                            <h2>${values.headingthree}</h2>
+                            <p>${values.origin}</p>
+                            <p>${values.continut}</p>
+                            <p>${values.umiditate}</p>
+                            <p></p>
+                          </div>
+                      </div> 
+                  </div>
+                </div>
+
+                <div id="modal-two">
+                  <a href="#" class="close-two"></a>
+                  <div class="modal-content-two">
+                    <a href="# ">x</a> 
+                          <div class="specs-two">
+                              <h2>${values.headingImportanta}</h2>
+                                <ul>
+                                  <li>${values.impFirstp}</li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                </ul>
+                          </div>
                   </div>
                 </div>
                      `

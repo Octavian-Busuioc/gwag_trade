@@ -1,7 +1,22 @@
 [
     {
-        "title":"Product title",
+        "title":"P205 G.R.P",
         "description": "Lorem ipsum dolor sit amet,consectetur adipisicing elit. Minima, quo.",
-        "info":"ceva informatii"
+        "headingtwo":"CE ESTE P2O5 G.R.P. ?",
+        "firstp":"este un fertilizant natural mineral cu continu ridicat de P2O5(pentaoxid de fosfor 25-35%)",
+        "secondp":"folosit atat in agricultura ecologica, cat si in cea conventionala",
+        "thirdp":"forma granulata(permite administrarea cu utilaje clasice)",
+        "forthp":"produsul este un ingrasamant granulat de baza folosit la fertilizarea tuturor tipurilor de cultuti agricole",
+        "headingthree":"SPECIFICATII",
+        "origin":"ORIGINE: Egipt",
+        "continut":"CONTINUT P205:min. 25%",
+        "umiditate":"UMIDITATE: Max 6%",
+        "dimensiuni":"DIMENSIUNI: 1-5 mm 90%, 0-10 mm 10%",
+        "continuttwo":"CONTINUT CADMIU: max. 10 PPM",
+        "headingImportanta":"Importanta fosforului in buna dezvoltare a culturii",
+        "impFirstp":"Asigura dezvoltarea sanatoasa si rapida a plantei",
+        "impFirstp":"Stimuleaza dezoltarea radacinilor, lucru necesar pentru o buna absorbtie a substantelor nutritive din sol",
+        "impFirstp":"Asigura dezvoltarea sanatoasa si rapida a plantei",
+        "impFirstp":"Asigura dezvoltarea sanatoasa si rapida a plantei"
     }
 ]

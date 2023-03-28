@@ -49,6 +49,3 @@ document.onclick = function (e) {
 // }
 
 
-
-
-
