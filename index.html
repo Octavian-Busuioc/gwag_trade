@@ -75,7 +75,7 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <h2 class="page-title">About Us</h2>
+              <h2 class="page-title">Despre noi</h2>
             <b>GwagTrade</b> este o companie specializata in importul si distributia de <br><i>fertilizanti</i> si exportul de <i>samanta certificata</i>.
               <b>atat pentru agricultura conventionala, cat si pentru cea ecologica.</b>
             </div>
@@ -87,24 +87,6 @@
         <div class="products">
 
           <div class="product" id="table_body">
-            <!-- <img src="products/01.jpg" alt="" /> -->
-            <p class="title">Product title</p>
-            <p class="description">
-              Lorem ipsum dolor sit amet, <br />
-              consectetur adipisicing elit. Minima, quo.
-            </p>
-            <a
-              class="info"
-              id="modalBtn"
-              data-toggle="tooltip"
-              data-placement="top"
-              title="Click for more info"
-              >Info</a
-            >
-
-           
-
-
           </div>
 
 
@@ -113,9 +95,6 @@
             <span class="closeBtn">&times;</span>
             <div class="content-modal"></div>
           </div> -->
-
-         
-
 
         </div>
       </div>
@@ -196,21 +175,17 @@
     <footer class="footer-area">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 xs-center">fsdfds</div>
-
-          <div class="col-xs-12 col-sm-6 text-right xs-center">
+          <div class="col-xs-12 col-sm-6 xs-center">
             <ul class="list-unstyled list-inline social-list">
               <li>ne poti urmari si aici:</li>
               <li>
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
               </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              </li>
             </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 text-right xs-center">
+            
           </div>
         </div>
       </div>
@@ -252,9 +227,12 @@
         // console.log(objectData[0].title);
         let tableData = "";
         objectData.map((values) => {
-          tableData= ` <p class="title">${values.title}</p>
+          tableData= ` 
+          
+                      <img src="../images/image014.png">
+                      <p class="title">${values.title}</p>
                        <p class="description">${values.description}</p>
-
+                       <p class="description">${values.descriptiontwo}</p>
 
                             <h1><a href="#modal">Specificatii</a></h1>
                             <h1><a href="#modal-two">Importanta fosforului</a></h1>
